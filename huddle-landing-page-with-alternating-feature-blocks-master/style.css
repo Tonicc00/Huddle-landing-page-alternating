@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root{
+    --heading-fam: 'Poppins', sans-serif;
+    --body-fam: 'Open Sans', sans-serif;
+
+    --heading-weight: 600;
+    --body-weight4: 400;
+    --body-weight7: 700;
+
+    --pink: hsl(322, 100%, 66%);
+    --pale-cyan: hsl(193, 100%, 96%);
+    --dark-cyan:hsl(192, 100%, 9%);
+    --gray-blue: hsl(208, 11%, 55%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.container div{
+    padding: 2rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+.header, .start{
+    background-image: url(images/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: var(--pale-cyan);
+}
+
+.header img{
+    height: 20px;
+    width: auto;
+    padding: 1rem;
+}
+.header button{
+    position: absolute;
+    right: 5%;
+    top: 2%;
+    width: 100px;
+    height: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    color: black;
+    background-color:white;
+    border: none;
+    box-shadow: 1px 2px 1px 2px lightgrey;
+    font-size: 14px;
+    font-family: var(--body-fam);
+    font-weight: bolder;
+}
+.header button:hover{
+    cursor: pointer;
+    color: darkslateblue;
+}
+
+.start{
+    text-align: center;
+}
+.start h1{
+    font-weight: var(--heading-weight);
+    color: var(--dark-cyan);
+    font-family: var(--heading-fam);
+    font-size: 23px;
+}
+.start p{
+    font-size: 15px;
+    font-family: var(--body-fam);
+    font-weight: var(--body-weight7);
+}
+.start button{
+    height: 35px;
+    width: 80%;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border: none;
+    background-color: var(--pink);
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: var(--body-fam);
+}
+.start button:hover{
+    cursor:pointer;
+    box-shadow: 1px 1px 2px 3px lightpink;
+}
+
+.shadow-grow{
+    text-align: center;
+    -moz-box-shadow: 0 0 4px #ccc;
+    -webkit-box-shadow: 0 0 4px #ccc;
+    box-shadow: 0 0 4px #ccc;
+    border-radius: 3%;
+}
+.grow .title{
+    font-size: 16px;
+    font-weight: var(--heading-weight);
+    font-family: var(--heading-fam);
+}
+.grow p{
+    color: var(--gray-blue);
+    font-size: 14px;
+    font-weight: var(--body-weight7);
+    font-family: var(--body-fam);
+}
+
+.shadow-flow{
+    text-align: center;
+    -moz-box-shadow: 0 0 4px #ccc;
+    -webkit-box-shadow: 0 0 4px #ccc;
+    box-shadow: 0 0 4px #ccc;
+    border-radius: 3%;
+}
+.flow .title{
+    font-size: 16px;
+    font-weight: var(--heading-weight);
+    font-family: var(--heading-fam);
+}
+.flow p{
+    color: var(--gray-blue);
+    font-size: 14px;
+    font-weight: var(--body-weight7);
+    font-family: var(--body-fam);
+}
+
+.users{
+    padding-bottom: 10%;
+}
+.shadow-users{
+    text-align: center;
+    -moz-box-shadow: 0 0 4px #ccc;
+    -webkit-box-shadow: 0 0 4px #ccc;
+    box-shadow: 0 0 4px #ccc;
+    border-radius: 3%;
+}
+.users .title{
+    font-size: 16px;
+    font-weight: var(--heading-weight);
+    font-family: var(--heading-fam);
+}
+.users p{
+    color: var(--gray-blue);
+    font-size: 14px;
+    font-weight: var(--body-weight7);
+    font-family: var(--body-fam);
+}
+
+.shadow-end{
+    text-align: center;
+    -moz-box-shadow: 0 0 4px #ccc;
+    -webkit-box-shadow: 0 0 4px #ccc;
+    box-shadow: 0 0 4px #ccc;
+    border-radius: 4%;
+    font-size: 14px;
+    font-family: var(--body-fam);
+    font-weight: var(--body-weight7);
+    background-color: white;
+}
+.end button{
+    height: 35px;
+    width: 90%;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border: none;
+    background-color: var(--pink);
+    color: white;
+    font-size: 15px;
+
+}
+.end button:hover{
+    cursor:pointer;
+    box-shadow: 0 0 7px lightpink;
+}
+
+footer .logo-img{
+    font-size: 40px;
+    font-family: var(--heading-fam);
+    font-weight:900;
+}
+
+footer{
+    padding-top: 9rem;
+    color: white;
+    background-color: var(--dark-cyan);
+    font-size: 18px;
+    font-family: var(--body-fam);
+    font-weight: var(--body-weight4);
+    line-height: 25px;
+}
+footer .socials i{
+    vertical-align: middle;
+    padding: 1.3rem;
+    margin-left:1rem;
+}
+footer .copy{
+    font-size: 10px;
+    text-align: center;
+}
+
+footer div{
+    padding: 2rem;
+}
+
+@media screen and (min-width:800px) {
+    body{
+        height: 50vh;
+        width: 170%;
+        margin: 0;
+        padding: 0;
+    }
+    img{
+        width: 50%;
+    }
+    .header .button{
+        display: block;
+        position: absolute;
+        top: 1%;
+        left: 150%;
+    }
+
+    .start h1{
+        width: 50%;
+    }
+    .start p{
+        width: 50%;
+    }
+    .start button{
+        width: 50%;
+        position: absolute;
+        left: 15%;
+    }
+    .start .mockup-img{
+        width: 50%;
+        position: absolute;
+        right: -55%;
+        top: 2%;
+    }
+    .start .mockup-img img{
+        height: 300px;
+        width: auto;
+    }
+
+    .grow .grow-together-img{
+        width: 50%;
+        position: absolute;
+        right: -45%;
+    }
+    .grow h2, p{
+        width: 50%;
+    }
+
+    .flow .flow-img{
+        width: 50%;
+    }
+    .flow .flow-img img{
+        height: 300px;
+        width: auto;
+    }
+    .flow h2, p{
+        width: 50%;
+    }
+    .flow h2{
+        position: absolute;
+        right: -40%;
+        bottom: 35%;
+    }
+    .flow p{
+        position: absolute;
+        right: -40%;
+        bottom: 25%;
+    }
+    .users .users-img{
+        width: 50%;
+        position: absolute;
+        right: -45%;
+    }
+    .users h2, p{
+        width: 50%;
+    }
+
+    .end{
+        position: absolute;
+        width: 50%;
+        left: 52%;
+        bottom: -37%;
+    }
+
+    footer{
+        margin-top: 10rem;
+    }
+    footer div{
+        width: 50%;
+    }
+    footer .location img{
+        height: 70px;
+        width: auto;
+        margin-right: 1rem;
+    }
+    footer .location p{
+        display: inline;
+    }
+    
+    footer .phone img{
+        height: 70px;
+        width: auto;
+        margin-right: 1rem;
+    }
+    footer .phone p{
+        display: inline;
+    }
+    
+    footer .email img{
+        height: 70px;
+        width: auto;
+        margin-right: 1rem;
+    }
+    footer .email p{
+        display: inline;
+    }
+
+    footer .company{
+        position: absolute;
+        width: 50%;
+        left: 60%;
+        bottom: -70%;
+        line-height: 2rem;
+        font-size: 25px;
+    }
+    footer .socials{
+        position: absolute;
+        width: 50%;
+        right: -70%;
+        bottom: -60%;
+    }
+    footer .copy{
+        position: relative;
+        width: 90%;
+        left: 70%;
+    }
+
+}
+
+@media screen and (width:1440px) {
+    .header button{
+        position: absolute;
+        right: 0;
+    }
+    .start img{
+        position: absolute;
+        top: 2%;
+    }
+    .grow{
+        height: 350px;
+    }
+    .grow p{
+        padding-bottom: 7rem;
+    }
+    .grow img{
+        position: absolute;
+        right: 5%;
+        height: 250px;
+        width: auto;
+    }
+
+    .flow h2{
+        position: absolute;
+        top: 35%;
+    }
+    .flow p{
+        position: absolute;
+        top: 40%;
+    }
+
+    .users{
+        height: 350px;
+    }
+    .users p{
+        padding-bottom: 7rem;
+    }
+    .users img{
+        position: absolute;
+        right: 5%;
+        height: 250px;
+        width: auto;
+    }
+    .end{
+        position: absolute;
+        bottom: 25%;
+    }
+
+    footer{
+        height: 100%;
+        padding-bottom: 100%;
+    }
+    footer .company{
+        position: absolute;
+        bottom: 10%;
+    }
+    footer .socials{
+        position: absolute;
+        bottom: 15%;
+    }
+}
